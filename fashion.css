@@ -1,0 +1,160 @@
+.favicon {
+    height: 80px;
+    width: 80px
+}
+.nav-bar h6{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.welcome{
+    font-family: "Algerian";
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+.welh2 h2{
+    font-size: 40px;
+}
+.welh2 p{
+    font-size: 20px;
+}
+.bea{
+    font-size: 33px;
+}
+.nav-links {
+    list-style: none;
+}
+.body-outline {
+    display: flex;
+    align-items: center; 
+    justify-content:space-around;
+    height: 1200px;
+    width: 800px
+}
+.hbody {
+    display: flex;
+    flex-direction: row;
+}
+.hbodyp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.hbody img{
+    height: 300px;
+    width: 300px;
+}
+.xbody{
+   display: flex;
+    flex-direction: row; 
+}
+.xbodyp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.xbody img{
+    height: 300px;
+    width: 300px;
+}
+.abody{
+   display: flex;
+    flex-direction: row; 
+}
+.abodyp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.abody img{
+    height: 300px;
+    width: 300px;
+}
+.vbody{
+   display: flex;
+    flex-direction: row; 
+}
+.vbodyp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.vbody img{
+    height: 300px;
+    width: 300px;
+}
+.obody{
+    display: flex;
+    flex-direction: row; 
+}
+.obodyp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.obody img{
+    height: 300px;
+    width: 300px;
+}
+.diamondbody{
+   display: flex;
+    flex-direction: row; 
+}
+.diamondbodyp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.diamondbody img{
+    height: 300px;
+    width: 300px;
+}
+.spoonbody{
+   display: flex;
+    flex-direction: row; 
+}
+.spoonbodyp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.spoonbody img{
+    height: 300px;
+    width: 300px;
+}
+.tophourglass{
+   display: flex;
+    flex-direction: row; 
+}
+.tophourglassbodyp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.tophourglass img{
+    height: 300px;
+    width: 300px;
+}
+.bottomhourglass{
+   display: flex;
+   flex-direction: row; 
+}
+.bottomhourglassbodyp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.bottomhourglass img{
+    height: 300px;
+    width: 300px;
+}
