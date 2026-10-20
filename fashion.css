@@ -128,7 +128,7 @@
 }
 .spoonbody img{
     height: 300px;
-    width: 300px;
+    width: 450px;
 }
 .tophourglass{
    display: flex;
@@ -156,5 +156,5 @@
 }
 .bottomhourglass img{
     height: 300px;
-    width: 300px;
+    width: 450px;
 }
