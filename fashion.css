@@ -190,3 +190,67 @@
 .facelp{
     font-size: 20px;
 }
+.oval {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.ovalp{
+    font-size: 20px;
+}
+.round {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.roundp{
+    font-size: 20px;
+}
+.square {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.squarep{
+    font-size: 20px;
+}
+.heart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.heartp{
+    font-size: 20px;
+}
+.diamond {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.diamondp{
+    font-size: 20px;
+}
+.oblong {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.oblongp{
+    font-size: 20px;
+}
+.triangle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.trianglep{
+    font-size: 20px;
+}
+.inverted-triangle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.inverted-trianglep{
+    font-size: 20px;
+}
