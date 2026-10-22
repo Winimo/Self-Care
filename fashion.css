@@ -157,4 +157,36 @@
 .bottomhourglass img{
     height: 300px;
     width: 450px;
+}      
+.forehead {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.forep{
+    font-size: 20px;
+}
+.cheekbone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.cheekp{
+    font-size: 20px;
+}
+.jawline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.jawp{
+    font-size: 20px;
+}
+.facelength {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.facelp{
+    font-size: 20px;
 }
