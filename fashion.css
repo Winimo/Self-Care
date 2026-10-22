@@ -21,17 +21,20 @@ body {
     align-items: center;
     font-size: 20px;
     padding: 10px;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
     width: 100%;
     background-color: #ffffff;
     z-index: 1000;
+    background-image: url(fImages/background-self.webp);
+    background-size: cover;
 }
-.nav-bar h6{
-    display: flex;
-    align-items: center;
-    font-size: 20px;
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
 }
 .welcome{
     font-family: 'Times New Roman', Times, serif;
