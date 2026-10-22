@@ -34,7 +34,7 @@
 }
 .hbody {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .hbodyp{
     display: flex;
@@ -48,7 +48,7 @@
 }
 .xbody{
    display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
 }
 .xbodyp{
     display: flex;
@@ -62,7 +62,7 @@
 }
 .abody{
    display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
 }
 .abodyp{
     display: flex;
@@ -76,7 +76,7 @@
 }
 .vbody{
    display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
 }
 .vbodyp{
     display: flex;
@@ -90,7 +90,7 @@
 }
 .obody{
     display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
 }
 .obodyp{
     display: flex;
@@ -104,7 +104,7 @@
 }
 .diamondbody{
    display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
 }
 .diamondbodyp{
     display: flex;
@@ -118,7 +118,7 @@
 }
 .spoonbody{
    display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
 }
 .spoonbodyp{
     display: flex;
@@ -132,7 +132,7 @@
 }
 .tophourglass{
    display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
 }
 .tophourglassbodyp{
     display: flex;
@@ -146,7 +146,7 @@
 }
 .bottomhourglass{
    display: flex;
-   flex-direction: row; 
+   flex-direction: column; 
 }
 .bottomhourglassbodyp{
     display: flex;
