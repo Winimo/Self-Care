@@ -55,12 +55,53 @@ body {
     align-items: center;
     gap: 30px;
 }
+.body-outline-wrap {
+    position: relative;
+    width: 900px;
+    max-width: 100%;
+    aspect-ratio: 1;
+    margin-inline: auto;
+}
 .body-outline {
-    display: flex;
-    align-items: center; 
-    justify-content:space-around;
-    height: 1200px;
-    width: 800px
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.body-face-link,
+.body-skin-link,
+.body-hair-link,
+.body-body-link {
+    position: absolute;
+    z-index: 1;
+    height: 7.8%;
+}
+.body-face-link {
+    left: 24.5%;
+    top: 13%;
+    width: 14.5%;
+}
+.body-skin-link {
+    left: 83%;
+    top: 47.5%;
+    width: 14%;
+}
+.body-hair-link {
+    left: 58.4%;
+    top: 22.2%;
+    width: 14.2%;
+}
+.body-body-link {
+    left: 5%;
+    top: 58.4%;
+    width: 15.6%;
+}
+.body-face-link:focus-visible,
+.body-skin-link:focus-visible,
+.body-hair-link:focus-visible,
+.body-body-link:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 2px;
 }
 .welcomebody{
     display: flex;
