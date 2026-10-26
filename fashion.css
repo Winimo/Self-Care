@@ -392,6 +392,14 @@ body {
 .diamondp{
     font-size: 25px;
 }
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.rectanglep{
+    font-size: 25px;
+}
 .oblong {
     display: flex;
     flex-direction: column;
