@@ -156,102 +156,127 @@ body {
 .welcomebody2 p{
     font-size: 25px;
 }
-.hbody {
-    display: flex;
-    flex-direction: column;
+.rectbod{
     font-size: 40px;
     margin-bottom: 0;
+}
+.hbody {
+    display: flex;
+    flex-direction: row;
 }
 .hbodyp{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-size: 25px;
-    padding: 0;
+    margin-bottom: 0;
 }
 .hbody img{
-    height: 500px;
-    width: 500px; 
+    height: 300px;
+    width: 300px; 
+}
+.hourbod{
+    font-size: 40px;
+    margin-bottom: 0;
 }
 .xbody{
    display: flex;
-    flex-direction: column; 
-    font-size: 40px;
+   flex-direction: row; 
 }
 .xbodyp{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-size: 25px;
+    margin-bottom: 0;
 }
 .xbody img{
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
+}
+.pearbod{
+    font-size: 40px;
+    margin-bottom: 0;
 }
 .abody{
    display: flex;
-    flex-direction: column; 
-    font-size: 40px;
+   flex-direction: row; 
 }
 .abodyp{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-size: 25px;
+    margin-bottom: 0;
 }
 .abody img{
-    height: 500px;
-    width: 500px; 
+    height: 300px;
+    width: 300px; 
+}
+.invbod{
+    font-size: 40px;
+    margin-bottom: 0;
 }
 .vbody{
-   display: flex;
-    flex-direction: column; 
-    font-size: 40px;
+    display: flex;
+    flex-direction: row; 
 }
 .vbodyp{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-size: 25px;
+    margin-bottom: 0;
 }
 .vbody img{
-    height: 500px;
-    width: 500px; 
+    height: 300px;
+    width: 300px;
+}
+.appbod{
+    font-size: 40px;
+    margin-bottom: 0;
 }
 .obody{
     display: flex;
-    flex-direction: column; 
-    font-size: 40px;
+    flex-direction: row; 
 }
 .obodyp{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-size: 25px;
+    margin-bottom: 0;
 }
 .obody img{
-    height: 500px;
-    width: 500px; 
+    height: 300px;
+    width: 300px; 
+}
+.diabod{
+    font-size: 40px;
+    margin-bottom: 0;
 }
 .diamondbody{
    display: flex;
-    flex-direction: column; 
-    font-size: 40px;
+   flex-direction: row; 
 }
 .diamondbodyp{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 0;
     font-size: 25px;
 }
 .diamondbody img{
-    height: 500px;
-    width: 500px; 
+    height: 300px;
+    width: 300px; 
+}
+.spobod{
+    font-size: 40px;
+    margin-bottom: 0;
 }
 .spoonbody{
    display: flex;
-   flex-direction: column; 
-   font-size: 40px;
+   flex-direction: row; 
 }
 .spoonbodyp{
     display: flex;
@@ -260,28 +285,35 @@ body {
     font-size: 25px;
 }
 .spoonbody img{
-    height: 500px;
-    width: 500px; 
+    height: 400px;
+    width: 400px; 
+}
+.topbod{
+    font-size: 40px;
+    margin-bottom: 0;
 }
 .tophourglass{
    display: flex;
-   flex-direction: column; 
-   font-size: 40px;
+   flex-direction: row; 
 }
 .tophourglassbodyp{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-size: 25px;
+    margin-bottom: 0;
 }
 .tophourglass img{
-    height: 500px;
-    width: 500px; 
+    height: 300px;
+    width: 300px; 
+}
+.bottombod{
+    font-size: 40px;
+    margin-bottom: 0;
 }
 .bottomhourglass{
    display: flex;
-   flex-direction: column;
-   font-size: 40px; 
+   flex-direction: row; 
 }
 .bottomhourglassbodyp{
     display: flex;
@@ -290,8 +322,8 @@ body {
     font-size: 25px;
 }
 .bottomhourglass img{
-   height: 500px;
-    width: 500px; 
+   height: 400px;
+    width: 400px; 
 }
 .bodyt{
     display: flex;
