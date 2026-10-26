@@ -331,6 +331,18 @@ body {
     align-items: center;
     font-size: 25px;
 } 
+.bodyt table {
+    border-collapse: collapse;
+}
+
+.bodyt thead th {
+    border-bottom: 2px solid #333;
+}
+
+.bodyt th:first-child,
+.bodyt td:first-child {
+    border-right: 2px solid #333;
+}
 .faceimg{
     width: 1350px;
     height: 1000px;
