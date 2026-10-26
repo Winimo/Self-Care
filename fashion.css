@@ -354,75 +354,79 @@ body {
 }
 .oval {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
 .ovalp{
     font-size: 25px;
 }
 .round {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
 .roundp{
     font-size: 25px;
 }
 .square {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
 .squarep{
     font-size: 25px;
 }
 .heart {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
 .heartp{
     font-size: 25px;
 }
 .diamond {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
 .diamondp{
     font-size: 25px;
 }
 .rectangle {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
 .rectanglep{
     font-size: 25px;
 }
 .oblong {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
 .oblongp{
     font-size: 25px;
 }
 .triangle {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
 .trianglep{
     font-size: 25px;
 }
 .inverted-triangle {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
 .inverted-trianglep{
     font-size: 25px;
+}
+.shapeimg{
+    width: 500px;
+    height: 500px;
 }
 .hairimg{
     width: 1350px;
