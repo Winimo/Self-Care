@@ -299,6 +299,10 @@ body {
     align-items: center;
     font-size: 25px;
 } 
+.faceimg{
+    width: 1350px;
+    height: 1000px;
+}
 .face-content{
     display: flex;
     flex-direction: column;
