@@ -32,6 +32,32 @@ body {
     background-image: url(fImages/background-self.webp);
     background-size: cover;
 }
+.nav-bar1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+.index {
+    display: flow-root;
+    margin-top: -90px;
+    padding-top: 90px;
+    min-height: 100vh;
+    background-image: url(fImages/background-self.webp);
+    background-size: cover;
+}
+.index .nav-bar1 {
+    background-color: transparent;
+    background-image: none;
+}
 .nav-links a {
     text-decoration: none;
     color: #000000;
@@ -39,7 +65,9 @@ body {
 }
 .welcome{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 100px;
 }
 .welh2 h2{
     font-size: 45px;
