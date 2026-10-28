@@ -400,25 +400,41 @@ body {
 .facelp{
     font-size: 25px;
 }
+.faceshape{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+}
+.faceshape > div{
+    flex: 1;
+    min-width: 0;
+    padding: 0 16px;
+}
+.faceshape > div:last-child{
+    border-right: none;
+}
 .oval {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 }
 .ovalp{
     font-size: 25px;
 }
 .round {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 }
 .roundp{
     font-size: 25px;
 }
 .square {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 .squarep{
@@ -426,55 +442,61 @@ body {
 }
 .heart {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 }
 .heartp{
     font-size: 25px;
 }
 .diamond {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 }
 .diamondp{
     font-size: 25px;
 }
 .rectangle {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 }
 .rectanglep{
     font-size: 25px;
 }
 .oblong {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 }
 .oblongp{
     font-size: 25px;
 }
 .triangle {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 }
 .trianglep{
     font-size: 25px;
 }
 .inverted-triangle {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 }
 .inverted-trianglep{
     font-size: 25px;
 }
 .shapeimg{
     width: 400px;
-    height: 400px;
+    height: 500px;
 }
 .hairimg{
     width: 1350px;
@@ -532,7 +554,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    min-width: 0;
 }
 .type img{
     height: 200px;
