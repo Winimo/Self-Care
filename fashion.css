@@ -519,7 +519,7 @@ body-content{
 .hair-content li{
     font-size: 25px;
 }
-.hairtype{
+.hair{
     display: flex;
     flex-direction: row;
 }
@@ -543,9 +543,8 @@ body-content{
     width: 100%;
 }
 .type img{
-    height: 200px;
-    width: 150px;
-
+    height: 300px;
+    width: 200px;
 }
 .skinimg{
     width: 1350px;
