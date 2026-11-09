@@ -331,7 +331,7 @@ body-content{
     border-right: 2px solid #333;
 }
 .bodyform{
-    font-size: 20px;
+    font-size: 25px;
     display: grid;
     place-items: center;
     padding-left: 40px;
@@ -354,8 +354,8 @@ body-content{
 .bodyfield{
     background-image: url(fImages/background-self.webp);
     background-size: cover;
-    padding: 20px  100px 0 100px;
-    border: 1px;
+    padding: 20px  100px 20px 100px;
+    border: 1px solid #ccc;
 }
 .submit{
     font-size: 20px;
@@ -514,6 +514,36 @@ body-content{
 .shapeimg{
     width: 400px;
     height: 500px;
+}
+.faceform{
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+    padding-left: 40px;
+    margin-top: 30px;
+}
+.faceform1 {
+    font-size: 25px;
+    margin: 20px 0 0 0;
+}
+.measure{
+    margin-bottom: 0px;
+}
+.measures{
+    position: relative;
+    margin-bottom: 50px;
+    padding: 14px 45px 14px 45px;
+    border: 1px solid;
+    font-size: 20px;
+}
+.facefield{
+    background-image: url(fImages/background-self.webp);
+    background-size: cover;
+    padding: 20px  100px 20px 100px;
+    border: 1px solid #ccc;
+}
+.submit{
+    font-size: 20px;
 }
 .hairimg{
     width: 1350px;
