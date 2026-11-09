@@ -359,6 +359,7 @@ body-content{
 }
 .submit{
     font-size: 20px;
+    padding: 10px 20px;
 }
 .faceimg{
     width: 1350px;
@@ -643,4 +644,31 @@ body-content{
 .skin{
     display: flex;
     flex-direction: row;
+}
+.skinform{
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+}
+.skinfield{
+    padding: 20px  100px 20px 20px;
+    border: 1px solid #ccc;
+}
+.skinform1 {
+    font-size: 25px;
+    margin: 20px 0 0 0;
+}
+.skint{
+    font-size: 30px;
+    margin-bottom: 0; 
+    font-weight: bold;
+}
+.skintt{
+    margin-top: 100px; 
+    font-weight: bold;
+}
+.skinsubmit{
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 50px;
 }
