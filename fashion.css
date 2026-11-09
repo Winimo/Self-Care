@@ -607,6 +607,33 @@ body-content{
     height: 300px;
     width: 300px;
 }
+.hairform{
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+}
+.hairfield{
+    padding: 20px  100px 20px 20px;
+    border: 1px solid #ccc;
+}
+.hairform1 {
+    font-size: 25px;
+    margin: 20px 0 0 0;
+}
+.hairt{
+    font-size: 30px;
+    margin-bottom: 0; 
+    font-weight: bold;
+}
+.hairtt{
+    margin-top: 100px; 
+    font-weight: bold;
+}
+.hairsubmit{
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
 .skinimg{
     width: 1350px;
     height: 750px;
