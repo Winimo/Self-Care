@@ -10,3 +10,22 @@ if('shoulder' >='bust' && 'bust' === 'hips' && 'waist' < 'hips' && 'waist' < 'bu
     console.log(`You have an Apple Body Shape.`);
 }
 
+if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' > 'jawline' && 'cheekbones' > 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline') {
+    console.log(`You have an Oval Face Shape.`)
+} else if('facelength' === 'cheekbones' && 'forehead' === 'jawline' && 'cheekbones' === 'jawline' && 'cheekbones' === 'forehead') {
+    console.log(`You have a Round Face Shape.`);
+} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' < 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline') {
+    console.log(`You have a Diamond Face Shape.`);
+} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' > 'jawline' && 'cheekbones' < 'forehead' && 'facelength' < 'forehead' && 'facelength' < 'jawline') {
+    console.log(`You have a Heart Face Shape.`);
+} else if('facelength' < 'cheekbones' && 'forehead' < 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' > 'forehead' && 'facelength' < 'forehead' && 'facelength' < 'jawline') {
+    console.log(`You have a Triangle Face Shape.`);
+} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' < 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline') {
+    console.log(`You have a Rectangle Face Shape.`);
+} else if('facelength' > 'cheekbones' && 'forehead' === 'jawline' && 'cheekbones' === 'jawline' && 'cheekbones' === 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline') {
+    console.log(`You have a Oblong Face Shape.`);
+} else if('facelength' === 'cheekbones' && 'forehead' === 'jawline' && 'cheekbones' === 'jawline' && 'cheekbones' === 'forehead') {
+    console.log(`You have a Square Face Shape.`);
+} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' > 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline') {
+    console.log(`You have a Inverted Triangle Face Shape.`);
+}
