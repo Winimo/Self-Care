@@ -10,22 +10,22 @@ if('shoulder' >='bust' && 'bust' === 'hips' && 'waist' < 'hips' && 'waist' < 'bu
     console.log(`You have an Apple Body Shape.`);
 }
 
-if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' > 'jawline' && 'cheekbones' > 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && features === "round") {
+if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' > 'jawline' && 'cheekbones' > 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && isRound === true) {
     console.log(`You have an Oval Face Shape.`)
-} else if('facelength' === 'cheekbones' && 'forehead' === 'jawline' && 'cheekbones' === 'jawline' && 'cheekbones' === 'forehead' && features === "round") {
+} else if('facelength' === 'cheekbones' && 'forehead' === 'jawline' && 'cheekbones' === 'jawline' && 'cheekbones' === 'forehead' && isRound === true) {
     console.log(`You have a Round Face Shape.`);
-} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' < 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && features === "angular") {
+} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' < 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && isRound === false) {
     console.log(`You have a Diamond Face Shape.`);
-} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' > 'jawline' && 'cheekbones' < 'forehead' && 'facelength' < 'forehead' && 'facelength' < 'jawline' && features === "somewhat") {
+} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' > 'jawline' && 'cheekbones' < 'forehead' && 'facelength' < 'forehead' && 'facelength' < 'jawline' && isRound === 'somewhat') {
     console.log(`You have a Heart Face Shape.`);
-} else if('facelength' < 'cheekbones' && 'forehead' < 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' > 'forehead' && 'facelength' < 'forehead' && 'facelength' < 'jawline' && features === "angular") {
+} else if('facelength' < 'cheekbones' && 'forehead' < 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' > 'forehead' && 'facelength' < 'forehead' && 'facelength' < 'jawline' && isRound === false) {
     console.log(`You have a Triangle Face Shape.`);
-} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' < 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && features === "angular") {
+} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' < 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && isRound === false) {
     console.log(`You have a Rectangle Face Shape.`);
-} else if('facelength' > 'cheekbones' && 'forehead' === 'jawline' && 'cheekbones' === 'jawline' && 'cheekbones' === 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && features === "somewhat") {
+} else if('facelength' > 'cheekbones' && 'forehead' === 'jawline' && 'cheekbones' === 'jawline' && 'cheekbones' === 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && isRound === 'somewhat') {
     console.log(`You have a Oblong Face Shape.`);
-} else if('facelength' === 'cheekbones' && 'forehead' === 'jawline' && 'cheekbones' === 'jawline' && 'cheekbones' === 'forehead' && features === "angular") {
+} else if('facelength' === 'cheekbones' && 'forehead' === 'jawline' && 'cheekbones' === 'jawline' && 'cheekbones' === 'forehead' && isRound === false) {
     console.log(`You have a Square Face Shape.`);
-} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' > 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && features === "angular") {
+} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' > 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && isRound === false) {
     console.log(`You have a Inverted Triangle Face Shape.`);
 }
