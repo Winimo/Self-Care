@@ -10,22 +10,22 @@ if('shoulder' >='bust' && 'bust' === 'hips' && 'waist' < 'hips' && 'waist' < 'bu
     console.log(`You have an Apple Body Shape.`);
 }
 
-if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' > 'jawline' && 'cheekbones' > 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && isRound === true) {
+if('L' > 'C' && 'L' > 'F' && 'L' > 'J' && 'F' > 'J' && 'F' < 'C' && 'J' < 'C' && isRound === true) {
     console.log(`You have an Oval Face Shape.`)
-} else if('facelength' === 'cheekbones' && 'forehead' === 'jawline' && 'cheekbones' === 'jawline' && 'cheekbones' === 'forehead' && isRound === true) {
+} else if('L' === 'C' && 'L' > 'F' && 'L' > 'J' && 'F' > 'J' && 'F' < 'C' && 'J' < 'C' && isRound === true) {
     console.log(`You have a Round Face Shape.`);
-} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' < 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && isRound === false) {
+} else if('L' > 'C' && 'L' > 'F' && 'L' > 'J' && 'F' === 'J' && 'F' < 'C' && 'J' < 'C' && isRound === false) {
     console.log(`You have a Diamond Face Shape.`);
-} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' > 'jawline' && 'cheekbones' < 'forehead' && 'facelength' < 'forehead' && 'facelength' < 'jawline' && isRound === 'somewhat') {
+} else if('L' > 'C' && 'L' > 'F' && 'L' > 'J' && 'F' < 'J' && 'F' >= 'C' && 'J' < 'C' && isRound === 'somewhat') {
     console.log(`You have a Heart Face Shape.`);
-} else if('facelength' < 'cheekbones' && 'forehead' < 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' > 'forehead' && 'facelength' < 'forehead' && 'facelength' < 'jawline' && isRound === false) {
+} else if('L' > 'J' && 'L' > 'C' && 'L' > 'F' && 'F' < 'J' && 'F' < 'C' && 'J' > 'C' && isRound === false) {
     console.log(`You have a Triangle Face Shape.`);
-} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' < 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && isRound === false) {
+} else if('L' > 'C' && 'L' > 'F' && 'L' > 'J' && 'F' ===  'C' && 'J' === 'C' && 'F' ===  'J' && isRound === false) {
     console.log(`You have a Rectangle Face Shape.`);
-} else if('facelength' > 'cheekbones' && 'forehead' === 'jawline' && 'cheekbones' === 'jawline' && 'cheekbones' === 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && isRound === 'somewhat') {
+} else if('L' > 'C' && 'L' > 'F' && 'L' > 'J' && 'F' === 'C' && 'J' === 'C' && 'F' === 'J' && isRound === 'somewhat') {
     console.log(`You have a Oblong Face Shape.`);
-} else if('facelength' === 'cheekbones' && 'forehead' === 'jawline' && 'cheekbones' === 'jawline' && 'cheekbones' === 'forehead' && isRound === false) {
+} else if('L' === 'C' && 'L' === 'F' && 'L' === 'J' && 'F' === 'C' && 'J' === 'C' && 'F' === 'J' && isRound === false) {
     console.log(`You have a Square Face Shape.`);
-} else if('facelength' > 'cheekbones' && 'forehead' > 'jawline' && 'cheekbones' < 'jawline' && 'cheekbones' > 'forehead' && 'facelength' > 'forehead' && 'facelength' > 'jawline' && isRound === false) {
+} else if('L' > 'J' && 'L' > 'C' && 'L' > 'F' && 'F' < 'J' && 'F' < 'C' && 'J' > 'C' && isRound === false) {
     console.log(`You have a Inverted Triangle Face Shape.`);
 }
