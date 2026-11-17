@@ -67,5 +67,30 @@ function calculateHairProfile(type, thickness, density, porosity) {
       "H": "Use thick creams, hydrolyzed proteins, and heavy oils/butters to seal cuticles."
     }
   };
+  if (!rules.type[t] || !rules.thickness[th] || !rules.density[d] || !rules.porosity[p]) {
+    throw new Error("Invalid input. Use Type (1A - 4C), Thickness (F/M/C), Density (L/M/H), and Porosity (L/M/H).");
+  }
+  return {
+    hairCode: `${t} / ${th} / ${d} / ${p}`,
+    recommendations: {
+      stylingAndHold: rules.type[t],
+      proteinAndSoftness: rules.thickness[th],
+      amountAndCut: rules.density[d],
+      formulaWeight: rules.porosity[p]
+    }
+  };
+  try {
+    const result = calculateHairProfile("1", "F", "L", "L");
+
+  console.log("==========================================");
+  console.log(`YOUR HAIR CODE: ${result.hairCode}`);
+  console.log("==========================================");
+  console.log(`• Styling & Hold:   ${result.recommendations.stylingAndHold}`);
+  console.log(`• Protein/Softness: ${result.recommendations.proteinAndSoftness}`);
+  console.log(`• Amount & Cut:     ${result.recommendations.amountAndCut}`);
+  console.log(`• Formula Weight:   ${result.recommendations.formulaWeight}`);
+} catch (error) {
+  console.error(error.message);
+}
 };
    
