@@ -36,7 +36,8 @@ function calculateHairProfile(type, thickness, density, porosity) {
   const d = String(density).trim().toUpperCase();
   const p = String(porosity).trim().toUpperCase();
 
-  const subTypeRules = {
+  const rules = {
+    type: {
     "1A": "Pin-straight and silky. Avoid all oils near roots; use lightweight volumizing sprays.",
     "1B": "Straight with light body. Use a gentle balancing shampoo and lightweight conditioner on ends.",
     "1C": "Straight with coarse texture. Use smoothing serums to tame subtle bends and humidity frizz.",
@@ -49,8 +50,7 @@ function calculateHairProfile(type, thickness, density, porosity) {
     "4A": "Tight, defined 'S' coils. Seal moisture with lightweight creams and detangle gently with slip.",
     "4B": "Sharp 'Z'-angled coils with high shrinkage. Use rich creams and butter-based sealants to soften bends.",
     "4C": "Tightly packed coils with maximum shrinkage. Focus on deep hydration, protective styles, and heavy sealants."
-  }
-  const rules = {
+    },
     thickness: {
       "F": "Include lightweight proteins (rice/silk amino acids) for structure; avoid heavy oils.",
       "M": "Maintain a 50/50 balance of moisturizing masks and occasional protein.",
