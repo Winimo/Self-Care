@@ -29,6 +29,11 @@ if('L' > 'C' && 'L' > 'F' && 'L' > 'J' && 'F' > 'J' && 'F' < 'C' && 'J' < 'C' &&
 } else if('L' > 'J' && 'L' > 'C' && 'L' > 'F' && 'F' < 'J' && 'F' < 'C' && 'J' > 'C' && isRound === false) {
     console.log(`You have a Inverted Triangle Face Shape.`);
 }
+const hairtype1 = document.getElementByID('hairtype1');
+const hairporo = document.getElementByID('hairporo');
+const hairthick = document.getElementByID('hairthick');
+const hairden = document.getElementByID('hairden');
+const submit = document.getElementByID('submit');
 
 function calculateHairProfile(type, thickness, density, porosity) {
     const t = String(type).trim();
@@ -52,9 +57,9 @@ function calculateHairProfile(type, thickness, density, porosity) {
     "4C": "Tightly packed coils with maximum shrinkage. Focus on deep hydration, protective styles, and heavy sealants."
     },
     thickness: {
-      "F": "Include lightweight proteins (rice/silk amino acids) for structure; avoid heavy oils.",
-      "M": "Maintain a 50/50 balance of moisturizing masks and occasional protein.",
-      "C": "Prioritize softening emollients and rich conditioners; avoid protein overload."
+      "FT": "Include lightweight proteins (rice/silk amino acids) for structure; avoid heavy oils.",
+      "MT": "Maintain a 50/50 balance of moisturizing masks and occasional protein.",
+      "CT": "Prioritize softening emollients and rich conditioners; avoid protein overload."
     },
     density: {
       "L": "Use coin-sized product amounts; blunt cuts create the illusion of fullness.",
@@ -62,9 +67,9 @@ function calculateHairProfile(type, thickness, density, porosity) {
       "H": "Work in 4-8 sections for even coverage; long layers help reduce bulk."
     },
     porosity: {
-      "L": "Use warm water or heat caps to open cuticles; stick to water-based humectants.",
-      "M": "Standard conditioners and light oils work effortlessly to maintain balance.",
-      "H": "Use thick creams, hydrolyzed proteins, and heavy oils/butters to seal cuticles."
+      "LP": "Use warm water or heat caps to open cuticles; stick to water-based humectants.",
+      "MP": "Standard conditioners and light oils work effortlessly to maintain balance.",
+      "HP": "Use thick creams, hydrolyzed proteins, and heavy oils/butters to seal cuticles."
     }
   };
   if (!rules.type[t] || !rules.thickness[th] || !rules.density[d] || !rules.porosity[p]) {
