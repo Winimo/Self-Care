@@ -72,7 +72,6 @@ function calculateFaceShape(faceLength,
 
   return "Oval"; 
 }
-console.log(`Your evaluated shape is: ${userFace}`); 
 
 const hairtype1 = document.getElementByID('hairtype1');
 const hairporo = document.getElementByID('hairporo');
@@ -81,7 +80,7 @@ const hairden = document.getElementByID('hairden');
 const submit = document.getElementByID('submit');
 
 function calculateHairProfile(type, thickness, density, porosity) {
-    const t = String(type).trim();
+  const t = String(type).trim().toUpperCase();
   const th = String(thickness).trim().toUpperCase();
   const d = String(density).trim().toUpperCase();
   const p = String(porosity).trim().toUpperCase();
@@ -122,6 +121,7 @@ function calculateHairProfile(type, thickness, density, porosity) {
   }
   return {
     hairCode: `${t} / ${th} / ${d} / ${p}`,
+    baseCategory: `Type ${t.charAt(0)}`,
     recommendations: {
       stylingAndHold: rules.type[t],
       proteinAndSoftness: rules.thickness[th],
@@ -129,18 +129,5 @@ function calculateHairProfile(type, thickness, density, porosity) {
       formulaWeight: rules.porosity[p]
     }
   };
-  try {
-    const result = calculateHairProfile("1", "F", "L", "L");
-
-  console.log("==========================================");
-  console.log(`YOUR HAIR CODE: ${result.hairCode}`);
-  console.log("==========================================");
-  console.log(`• Styling & Hold:   ${result.recommendations.stylingAndHold}`);
-  console.log(`• Protein/Softness: ${result.recommendations.proteinAndSoftness}`);
-  console.log(`• Amount & Cut:     ${result.recommendations.amountAndCut}`);
-  console.log(`• Formula Weight:   ${result.recommendations.formulaWeight}`);
-} catch (error) {
-  console.error(error.message);
 }
-};
    
