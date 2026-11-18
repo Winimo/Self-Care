@@ -10,25 +10,70 @@ if('shoulder' >='bust' && 'bust' === 'hips' && 'waist' < 'hips' && 'waist' < 'bu
     console.log(`You have an Apple Body Shape.`);
 }
 
-if('L' > 'C' && 'L' > 'F' && 'L' > 'J' && 'F' > 'J' && 'F' < 'C' && 'J' < 'C' && isRound === true) {
-    console.log(`You have an Oval Face Shape.`)
-} else if('L' === 'C' && 'L' > 'F' && 'L' > 'J' && 'F' > 'J' && 'F' < 'C' && 'J' < 'C' && isRound === true) {
-    console.log(`You have a Round Face Shape.`);
-} else if('L' > 'C' && 'L' > 'F' && 'L' > 'J' && 'F' === 'J' && 'F' < 'C' && 'J' < 'C' && isRound === false) {
-    console.log(`You have a Diamond Face Shape.`);
-} else if('L' > 'C' && 'L' > 'F' && 'L' > 'J' && 'F' < 'J' && 'F' >= 'C' && 'J' < 'C' && isRound === 'somewhat') {
-    console.log(`You have a Heart Face Shape.`);
-} else if('L' > 'J' && 'L' > 'C' && 'L' > 'F' && 'F' < 'J' && 'F' < 'C' && 'J' > 'C' && isRound === false) {
-    console.log(`You have a Triangle Face Shape.`);
-} else if('L' > 'C' && 'L' > 'F' && 'L' > 'J' && 'F' ===  'C' && 'J' === 'C' && 'F' ===  'J' && isRound === false) {
-    console.log(`You have a Rectangle Face Shape.`);
-} else if('L' > 'C' && 'L' > 'F' && 'L' > 'J' && 'F' === 'C' && 'J' === 'C' && 'F' === 'J' && isRound === 'somewhat') {
-    console.log(`You have a Oblong Face Shape.`);
-} else if('L' === 'C' && 'L' === 'F' && 'L' === 'J' && 'F' === 'C' && 'J' === 'C' && 'F' === 'J' && isRound === false) {
-    console.log(`You have a Square Face Shape.`);
-} else if('L' > 'J' && 'L' > 'C' && 'L' > 'F' && 'F' < 'J' && 'F' < 'C' && 'J' > 'C' && isRound === false) {
-    console.log(`You have a Inverted Triangle Face Shape.`);
+function calculateFaceShape(faceLength,
+  foreheadWidth,
+  cheekboneWidth,
+  jawlineWidth,
+  isRound) {  
+  const isRoughlyEqual = (a, b, tolerance = 0.08) => {
+    return Math.abs(a - b) / Math.max(a, b) <= tolerance;
+  };
+  const isLongerThanWidth = faceLength > cheekboneWidth && !isRoughlyEqual(faceLength, cheekboneWidth);
+  const isLongerThanCheekbones = faceLength > cheekboneWidth && !isRoughlyEqual(faceLength, cheekboneWidth);
+  const isLongerThanForehead = faceLength > foreheadWidth;
+  const isLongerThanJawline = faceLength > jawlineWidth;
+  const isForeheadLongerThanJawline = foreheadWidth > jawlineWidth && !isRoughlyEqual(foreheadWidth, jawlineWidth);
+  const isForeheadShorterThanJawline = foreheadWidth < jawlineWidth && !isRoughlyEqual(foreheadWidth, jawlineWidth);
+  const isForeheadLongerThanCheekbones = foreheadWidth > cheekboneWidth && !isRoughlyEqual(foreheadWidth, cheekboneWidth);
+  const isForeheadShorterThanCheekbones = foreheadWidth < cheekboneWidth && !isRoughlyEqual(foreheadWidth, cheekboneWidth);
+  const isJawlineLongerThanCheekbones = jawlineWidth > cheekboneWidth && !isRoughlyEqual(jawlineWidth, cheekboneWidth);
+  const isJawlineShorterThanCheekbones = jawlineWidth < cheekboneWidth && !isRoughlyEqual(jawlineWidth, cheekboneWidth);
+
+   if (!isLongerThanWidth || isRoughlyEqual(faceLength, cheekboneWidth)) {
+    if (
+      isRoughlyEqual(foreheadWidth, jawlineWidth) && 
+      isRoughlyEqual(foreheadWidth, cheekboneWidth) && 
+      isRound
+    ) {
+      return "Round";
+    }
+    return "Square";
+  }
+
+  if (isForeheadShorterThanJawline && isJawlineLongerThanCheekbones) {
+    return "Triangle (Pear)";
+  }
+
+  if (isForeheadLongerThanCheekbones && isJawlineShorterThanCheekbones) {
+    return "Inverted Triangle";
+  }
+
+  if (isForeheadLongerThanJawline && isRoughlyEqual(foreheadWidth, cheekboneWidth)) {
+    if (!isRound) return "Inverted Triangle"; 
+    return "Heart";
+  }
+
+  if (isForeheadShorterThanCheekbones && isJawlineShorterThanCheekbones && isRoughlyEqual(foreheadWidth, jawlineWidth)) {
+    if (isRound) return "Oval";
+    return "Diamond";
+  }
+
+  if (
+    faceLength / cheekboneWidth >= 1.35 && 
+    isRoughlyEqual(foreheadWidth, cheekboneWidth) && 
+    isRoughlyEqual(cheekboneWidth, jawlineWidth)
+  ) {
+    return isRound ? "Rectangle" : "Oblong";
+  }
+
+  if (isLongerThanCheekbones && isForeheadLongerThanJawline && isForeheadShorterThanCheekbones) {
+    return "Oval";
+  }
+
+  return "Oval"; 
 }
+console.log(`Your evaluated shape is: ${userFace}`); 
+
 const hairtype1 = document.getElementByID('hairtype1');
 const hairporo = document.getElementByID('hairporo');
 const hairthick = document.getElementByID('hairthick');
