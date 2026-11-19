@@ -154,4 +154,3 @@ function calculateHairProfile(type, thickness, density, porosity) {
     }
   };
 }
-   
