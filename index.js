@@ -1,4 +1,38 @@
+function calculateBodyShape(shoulders, bust, waist, hips) {
+  const upperBody = Math.max(shoulders, bust);
+  const waistToUpperDiff = upperBody - waist;
+  const waistToHipsDiff = hips - waist;
+  const upperToHipsDiff = Math.abs(upperBody - hips);
+  if (waist > upperBody && waist > hips) {
+    if (waist - upperBody >= 3 && waist - hips >= 3) {
+      return "Diamond";
+    }
+    return "Apple (Oval)";
+  }
+  if (waistToUpperDiff >= 7 && waistToHipsDiff >= 7) {
+    if (bust - hips >= 2) {
+      return "Top Hourglass";
+    }
+    if (hips - bust >= 2) {
+      return "Bottom Hourglass";
+    }
+    return "Hourglass";
+  }
+  if (hips - upperBody >= 3) {
+    if (hips - waist >= 7) {
+      return "Spoon";
+    }
+    return "Pear (Triangle)";
+  }
+  if (upperBody - hips >= 3) {
+    return "Inverted Triangle";
+  }
+  if (upperToHipsDiff < 3 && waistToUpperDiff < 7 && waistToHipsDiff < 7) {
+    return "Rectangle (Straight)";
+  }
 
+  return "Balanced / Custom Proportions";
+}
 
 function calculateFaceShape(faceLength,
   foreheadWidth,
