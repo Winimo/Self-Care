@@ -154,3 +154,51 @@ function calculateHairProfile(type, thickness, density, porosity) {
     }
   };
 }
+
+function calculateSkinProfile(skinTypeAnswers, toneScores, undertoneAnswers) {
+  const getDominantTrait = (answers, fallback = "normal") => {
+    if (!Array.isArray(answers) || answers.length === 0) return fallback;
+    
+    const counts = answers.reduce((acc, val) => {
+      acc[val] = (acc[val] || 0) + 1;
+      return acc;
+    }, {});
+
+    return Object.keys(counts).reduce((a, b) => (counts[a] >= counts[b] ? a : b));
+  };
+
+  const isSensitive = skinTypeAnswers.includes("sensitive");
+  const coreTypeAnswers = skinTypeAnswers.filter(ans => ans !== "sensitive");
+  const primaryType = getDominantTrait(coreTypeAnswers, "normal");
+  const totalToneScore = toneScores.reduce((sum, pts) => sum + pts, 0);
+  let fitzpatrick = {};
+
+  if (totalToneScore <= 7) {
+    fitzpatrick = { level: "Type I", label: "Very Fair" };
+  } else if (totalToneScore <= 16) {
+    fitzpatrick = { level: "Type II", label: "Fair" };
+  } else if (totalToneScore <= 25) {
+    fitzpatrick = { level: "Type III", label: "Medium" };
+  } else if (totalToneScore <= 30) {
+    fitzpatrick = { level: "Type IV", label: "Olive / Tan" };
+  } else {
+    fitzpatrick = { level: "Type V - VI", label: "Dark / Deep" };
+  }
+
+  const undertone = getDominantTrait(undertoneAnswers, "neutral");
+
+  return {
+    skinType: {
+      primary: primaryType,
+      sensitive: isSensitive,
+      display: isSensitive ? `${primaryType} (Sensitive)` : primaryType
+    },
+    skinTone: {
+      score: totalToneScore,
+      fitzpatrickLevel: fitzpatrick.level,
+      depthLabel: fitzpatrick.label
+    },
+    undertone: undertone,
+    summary: `${fitzpatrick.label} (${fitzpatrick.level}) | ${undertone} undertone | ${primaryType} skin`
+  };
+}
