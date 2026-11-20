@@ -1,14 +1,23 @@
 function calculateBodyShape(shoulders, bust, waist, hips) {
+
+  // Use the wider upper-body measurement as the top anchor
   const upperBody = Math.max(shoulders, bust);
+
+  // Calculate differences
   const waistToUpperDiff = upperBody - waist;
   const waistToHipsDiff = hips - waist;
   const upperToHipsDiff = Math.abs(upperBody - hips);
+
+   // 1. Midsection Dominant (Apple / Diamond)
   if (waist > upperBody && waist > hips) {
+    // Diamond has noticeably narrower shoulders/bust than the waist
     if (waist - upperBody >= 3 && waist - hips >= 3) {
       return "Diamond";
     }
     return "Apple (Oval)";
   }
+
+  // 2. Hourglass Variations (Waist is significantly smaller than both top and bottom)
   if (waistToUpperDiff >= 7 && waistToHipsDiff >= 7) {
     if (bust - hips >= 2) {
       return "Top Hourglass";
@@ -18,15 +27,22 @@ function calculateBodyShape(shoulders, bust, waist, hips) {
     }
     return "Hourglass";
   }
+
+  // 3. Bottom Heavy (Pear / Spoon)
   if (hips - upperBody >= 3) {
+    // Spoon features a sharply defined waist despite wider hips
     if (hips - waist >= 7) {
       return "Spoon";
     }
     return "Pear (Triangle)";
   }
+
+  // 4. Top Heavy (Inverted Triangle)
   if (upperBody - hips >= 3) {
     return "Inverted Triangle";
   }
+
+  // 5. Balanced / Straight (Rectangle)
   if (upperToHipsDiff < 3 && waistToUpperDiff < 7 && waistToHipsDiff < 7) {
     return "Rectangle (Straight)";
   }
