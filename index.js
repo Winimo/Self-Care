@@ -156,6 +156,7 @@ function calculateHairProfile(type, thickness, density, porosity) {
 }
 
 function calculateSkinProfile(skinTypeAnswers, toneScores, undertoneAnswers) {
+  // 1. Helper to find the most frequent category (used for Type & Undertone)
   const getDominantTrait = (answers, fallback = "normal") => {
     if (!Array.isArray(answers) || answers.length === 0) return fallback;
     
@@ -167,9 +168,12 @@ function calculateSkinProfile(skinTypeAnswers, toneScores, undertoneAnswers) {
     return Object.keys(counts).reduce((a, b) => (counts[a] >= counts[b] ? a : b));
   };
 
+  // 2. Determine Skin Type (with optional "Sensitive" flag)
   const isSensitive = skinTypeAnswers.includes("sensitive");
   const coreTypeAnswers = skinTypeAnswers.filter(ans => ans !== "sensitive");
   const primaryType = getDominantTrait(coreTypeAnswers, "normal");
+
+  // 3. Determine Surface Tone (0–4 pts addition via Fitzpatrick Scale)
   const totalToneScore = toneScores.reduce((sum, pts) => sum + pts, 0);
   let fitzpatrick = {};
 
@@ -185,8 +189,10 @@ function calculateSkinProfile(skinTypeAnswers, toneScores, undertoneAnswers) {
     fitzpatrick = { level: "Type V - VI", label: "Dark / Deep" };
   }
 
+  // 4. Determine Undertone
   const undertone = getDominantTrait(undertoneAnswers, "neutral");
 
+  // 5. Return the combined profile
   return {
     skinType: {
       primary: primaryType,
